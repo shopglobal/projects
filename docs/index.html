@@ -6,371 +6,372 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <article id='container'>
-      <h1 id="kai-fa-zi-yuan-zong-jie--chi-xu-zheng-li-zhong-">开发资源总结 (持续整理中)</h1>
+<Article id = 'container'>
+      <H1 id = "kai-fa-zi-yuan-zong-jie - chi-xu-zheng-li-zhong -"> Development Resources Summary (Continued) </ h1>
 
-<blockquote class="no_toc">
-  <p><em>就像开发一样, 这篇文档如果没有人关心和维护, 里面的内容就会变得老旧, 过时而不再具有参考价值. 所以, 我希望所有看到并喜欢这篇文档的人都来一起维护它. 放心大胆的提交 Pull Request 和 Issue 吧!!</em></p>
-</blockquote>
+<Blockquote class = "no_toc">
+  <P> <em> As with development, this document will be old, out of date, and no longer worthy of reference if nobody is concerned and maintained, so I want all to see and like this Document people to come together to maintain it. Assured of bold submission of Pull Request and Issue it !! </ em> </ p>
+</ Blockquote>
 
-<p>这是对自己这几年开发的一个总结，各种项目、资源、书籍、博客等</p>
+<P> This is a summary of their development over the past few years, a variety of projects, resources, books, blogs, etc. </ p>
 
-<p>喜欢么？或者对您有用？那就 Star 一下吧 ^_^</p>
+<P> like it? Or useful to you? Then star about it ^ _ ^ </ p>
 
-<h2 id="gong-xian-fang-shi-">贡献方式</h2>
+<H2 id = "gong-xian-fang-shi -"> contribution mode </ h2>
 
-<ul>
-  <li>Fork 这个项目</li>
-  <li>不要直接在 <code>Readme.md</code> 中直接添加内容</li>
-  <li>所有的文档都放在 <code>docs</code> 中, 请根据内容找到相应的文件并添加</li>
-  <li>如果是 Mac 或者 Linux 用户, 请在提交前运行 ./build.sh 来自动生成 <code>Readme.md</code> 文件</li>
-  <li>保存并提交</li>
-  <li>新建一个 Pull Request</li>
+<Ul>
+  <Li> Fork this item </li>
+  <Li> Do not add content directly to <code> Readme.md </ code> </li>
+  <Li> All documents are in <code> docs </ code>, find the file based on the content and add </li>
+  <Li> For Mac or Linux users, run ./build.sh before committing to automatically generate <code> Readme.md </ code> files </li>
+  <Li> Save and submit </li>
+  <Li> Create a new Pull Request </li>
 </ul>
 
-<h2 id="mu-lu-">目录</h2>
+<H2 id = "mu-lu -"> directory </ h2>
 
 <ul id="markdown-toc">
   <li>
-<a href="#kai-fa-zi-yuan-zong-jie--chi-xu-zheng-li-zhong-" id="markdown-toc-kai-fa-zi-yuan-zong-jie--chi-xu-zheng-li-zhong-">开发资源总结 (持续整理中)</a>    <ul>
-      <li><a href="#gong-xian-fang-shi-" id="markdown-toc-gong-xian-fang-shi-">贡献方式</a></li>
-      <li><a href="#mu-lu-" id="markdown-toc-mu-lu-">目录</a></li>
-      <li>
-<a href="#web-qian-duan-" id="markdown-toc-web-qian-duan-">Web 前端</a>        <ul>
-          <li>
-<a href="#javascript" id="markdown-toc-javascript">Javascript</a>            <ul>
-              <li><a href="#polyfills" id="markdown-toc-polyfills">Polyfills</a></li>
-              <li><a href="#html5-xiang-guan-" id="markdown-toc-html5-xiang-guan-">HTML5 相关</a></li>
-              <li><a href="#react" id="markdown-toc-react">React</a></li>
-            </ul>
-          </li>
-          <li><a href="#css" id="markdown-toc-css">CSS</a></li>
-          <li><a href="#icon" id="markdown-toc-icon">ICON</a></li>
-        </ul>
-      </li>
-      <li>
-<a href="#web-hou-duan-" id="markdown-toc-web-hou-duan-">Web 后端</a>        <ul>
-          <li><a href="#ruby" id="markdown-toc-ruby">Ruby</a></li>
-          <li><a href="#python" id="markdown-toc-python">Python</a></li>
-          <li>
-<a href="#nodejs" id="markdown-toc-nodejs">Node.js</a>            <ul>
-              <li><a href="#express" id="markdown-toc-express">Express</a></li>
-            </ul>
-          </li>
-          <li><a href="#erlang" id="markdown-toc-erlang">Erlang</a></li>
-          <li><a href="#java" id="markdown-toc-java">Java</a></li>
-          <li><a href="#cc" id="markdown-toc-cc">C/C++</a></li>
-          <li><a href="#go" id="markdown-toc-go">Go</a></li>
-          <li><a href="#lua" id="markdown-toc-lua">Lua</a></li>
-        </ul>
-      </li>
-      <li><a href="#ios-huo--osx" id="markdown-toc-ios-huo--osx">IOS 或 OSX</a></li>
-      <li><a href="#android" id="markdown-toc-android">Android</a></li>
-      <li>
-<a href="#dai-ma-xiao-lu-" id="markdown-toc-dai-ma-xiao-lu-">代码效率</a>        <ul>
-          <li><a href="#coffeescript" id="markdown-toc-coffeescript">CoffeeScript</a></li>
-          <li><a href="#typescript" id="markdown-toc-typescript">TypeScript</a></li>
-          <li><a href="#sublime-text" id="markdown-toc-sublime-text">Sublime Text</a></li>
-        </ul>
-      </li>
-      <li>
-<a href="#yun-ji-suan-" id="markdown-toc-yun-ji-suan-">云计算</a>        <ul>
-          <li><a href="#docker" id="markdown-toc-docker">Docker</a></li>
-          <li><a href="#os" id="markdown-toc-os">OS</a></li>
-        </ul>
-      </li>
-      <li><a href="#kai-yuan-chan-pin-lun-tan--zai-xian-jiao-yu--xiang-mu-guan-li-deng-" id="markdown-toc-kai-yuan-chan-pin-lun-tan--zai-xian-jiao-yu--xiang-mu-guan-li-deng-">开源产品(论坛、在线教育、项目管理等)</a></li>
-      <li>
-<a href="#dai-ma-gui-fan-she-ji-mo-shi-" id="markdown-toc-dai-ma-gui-fan-she-ji-mo-shi-">代码规范&amp;设计模式</a>        <ul>
-          <li>
-<a href="#ruby-1" id="markdown-toc-ruby-1">Ruby</a>            <ul>
-              <li><a href="#rails" id="markdown-toc-rails">Rails</a></li>
-            </ul>
-          </li>
-          <li>
-<a href="#javascript-1" id="markdown-toc-javascript-1">Javascript</a>            <ul>
-              <li><a href="#angularjs" id="markdown-toc-angularjs">AngularJS</a></li>
-            </ul>
-          </li>
-          <li>
-<a href="#java-1" id="markdown-toc-java-1">Java</a>            <ul>
-              <li><a href="#android-1" id="markdown-toc-android-1">Android</a></li>
-            </ul>
-          </li>
-          <li><a href="#bash" id="markdown-toc-bash">Bash</a></li>
-          <li>
-<a href="#objective-c" id="markdown-toc-objective-c">Objective-C</a>            <ul>
-              <li><a href="#ios" id="markdown-toc-ios">IOS</a></li>
-            </ul>
-          </li>
-          <li><a href="#swift" id="markdown-toc-swift">Swift</a></li>
-          <li><a href="#design" id="markdown-toc-design">Design</a></li>
-        </ul>
-      </li>
-      <li><a href="#shu-ju-ku-" id="markdown-toc-shu-ju-ku-">数据库</a></li>
-      <li>
-<a href="#bo-ke---wang-zhan-" id="markdown-toc-bo-ke---wang-zhan-">博客 / 网站</a>        <ul>
-          <li><a href="#she-ji-" id="markdown-toc-she-ji-">设计</a></li>
-          <li><a href="#ji-zhu-" id="markdown-toc-ji-zhu-">技术</a></li>
-        </ul>
-      </li>
-      <li>
-<a href="#shu-ji---yue-du---xue-xi-" id="markdown-toc-shu-ji---yue-du---xue-xi-">书籍 / 阅读 / 学习</a>        <ul>
-          <li><a href="#awesome-xi-lie-" id="markdown-toc-awesome-xi-lie-">Awesome 系列</a></li>
-          <li>
-<a href="#qian-duan-" id="markdown-toc-qian-duan-">前端</a>            <ul>
-              <li><a href="#web" id="markdown-toc-web">Web</a></li>
-              <li><a href="#ios-1" id="markdown-toc-ios-1">IOS</a></li>
-              <li><a href="#android-2" id="markdown-toc-android-2">Android</a></li>
-            </ul>
-          </li>
-          <li>
-<a href="#hou-duan-" id="markdown-toc-hou-duan-">后端</a>            <ul>
-              <li><a href="#nodejs-1" id="markdown-toc-nodejs-1">Node.js</a></li>
-              <li><a href="#ruby-2" id="markdown-toc-ruby-2">Ruby</a></li>
-              <li><a href="#php" id="markdown-toc-php">PHP</a></li>
-              <li><a href="#go-1" id="markdown-toc-go-1">Go</a></li>
-              <li><a href="#jie-kou-" id="markdown-toc-jie-kou-">接口</a></li>
-            </ul>
-          </li>
-          <li><a href="#suan-fa---lun-wen-" id="markdown-toc-suan-fa---lun-wen-">算法 &amp; 论文</a></li>
-          <li><a href="#qi-ta-" id="markdown-toc-qi-ta-">其他</a></li>
-        </ul>
-      </li>
-      <li><a href="#ke-xue-shang-wang-" id="markdown-toc-ke-xue-shang-wang-">科学上网</a></li>
-      <li><a href="#git-xiang-guan-" id="markdown-toc-git-xiang-guan-">Git 相关</a></li>
-      <li><a href="#qi-ta--1" id="markdown-toc-qi-ta--1">其他</a></li>
-      <li><a href="#license" id="markdown-toc-license">License</a></li>
-    </ul>
-  </li>
+<a href="#kai-fa-zi-yuan-zong-jie--chi-xu-zheng-li-zhong-" id="markdown-toc-kai-fa-zi-yuan-zong-jie--chi-xu-zheng-li-zhong-">Development Resources Summary (Continued) </a> <ul>
+      <Li> <a href="#gong-xian-fang-shi-" id="markdown-toc-gong-xian-fang-shi-"> Contribution </a> </li>
+      <Li> <a href="#mu-lu-" id="markdown-toc-mu-lu-"> directory </a> </li>
+      <Li>
+<a href="#web-qian-duan-" id="markdown-toc-web-qian-duan-"> Web front end </a> <ul>
+          <Li>
+<a href="#javascript" id="markdown-toc-javascript"> Javascript </a> <ul>
+              <Li> <a href="#polyfills" id="markdown-toc-polyfills"> Polyfills </a> </li>
+              <Li> <a href="#html5-xiang-guan-" id="markdown-toc-html5-xiang-guan-"> HTML5 related </a> </li>
+              <Li> <a href="#react" id="markdown-toc-react"> React </a> </li>
+            </Ul>
+          </Li>
+          <Li> <a href="#css" id="markdown-toc-css"> CSS </a> </li>
+          <Li> <a href="#icon" id="markdown-toc-icon"> ICON </a> </li>
+        </Ul>
+      </Li>
+      <Li>
+<a href="#web-hou-duan-" id="markdown-toc-web-hou-duan-"> Web backend </a> <ul>
+          <Li> <a href="#ruby" id="markdown-toc-ruby"> Ruby </a> </li>
+          <Li> <a href="#python" id="markdown-toc-python"> Python </a> </li>
+          <Li>
+<a href="#nodejs" id="markdown-toc-nodejs"> Node.js </a> <ul>
+              <Li> <a href="#express" id="markdown-toc-express"> Express </a> </li>
+            </Ul>
+          </Li>
+          <Li> <a href="#erlang" id="markdown-toc-erlang"> Erlang </a> </li>
+          <Li> <a href="#java" id="markdown-toc-java"> Java </a> </li>
+          <Li> <a href="#cc" id="markdown-toc-cc"> C / C ++ </a> </li>
+          <Li> <a href="#go" id="markdown-toc-go"> Go </a> </li>
+          <Li> <a href="#lua" id="markdown-toc-lua"> Lua </a> </li>
+        </Ul>
+      </Li>
+     <Li> <a href="#ios-huo--osx" id="markdown-toc-ios-huo--osx"> IOS or OSX </a> </li>
+      <Li> <a href="#android" id="markdown-toc-android"> Android </a> </li>
+      <Li>
+<a href="#dai-ma-xiao-lu-" id="markdown-toc-dai-ma-xiao-lu-"> Code Efficiency </a> <ul>
+          <Li> <a href="#coffeescript" id="markdown-toc-coffeescript"> CoffeeScript </a> </li>
+          <Li> <a href="#typescript" id="markdown-toc-typescript"> TypeScript </a> </li>
+          <Li> <a href="#sublime-text" id="markdown-toc-sublime-text"> Sublime Text </a> </li>
+        </ul>
+      </li>
+      <Li>
+<a href="#yun-ji-suan-" id="markdown-toc-yun-ji-suan-"> cloud computing </a> <ul>
+          <Li> <a href="#docker" id="markdown-toc-docker"> Docker </a> </li>
+          <Li> <a href="#os" id="markdown-toc-os"> OS </a> </li>
+        </ul>
+      </li>
+      <Li> <a href = "# kai-yuan-chan-pin-lun-tan - zai-xian-jiao-yu - xiang-mu-guan-li-deng-" id = "markdown-toc-kai Open source products (forums, online education, project management, etc.) </a> <-> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - / Li>
+      <Li>
+<a href="#dai-ma-gui-fan-she-ji-mo-shi-" id="markdown-toc-dai-ma-gui-fan-she-ji-mo-shi-"> Code Specification & Amp; design mode </a> <ul>
+          <Li>
+<a href="#ruby-1" id="markdown-toc-ruby-1"> Ruby </a> <ul>
+              <Li> <a href="#rails" id="markdown-toc-rails"> Rails </a> </li>
+            </ul>
+          </li>
+          <Li>
+<a href="#javascript-1" id="markdown-toc-javascript-1"> Javascript </a> <ul>
+              <Li> <a href="#angularjs" id="markdown-toc-angularjs"> AngularJS </a> </li>
+            </ul>
+          </li>
+          <Li>
+<a href="#java-1" id="markdown-toc-java-1"> Java </a> <ul>
+              <Li> <a href="#android-1" id="markdown-toc-android-1"> Android </a> </li>
+            </ul>
+          </li>
+          <Li> <a href="#bash" id="markdown-toc-bash"> Bash </a> </li>
+          <Li>
+<a href="#objective-c" id="markdown-toc-objective-c"> Objective-C </a> <ul>
+              <Li> <a href="#ios" id="markdown-toc-ios"> IOS </a> </li>
+            </ul>
+          </li>
+          <Li> <a href="#swift" id="markdown-toc-swift"> Swift </a> </li>
+          <Li> <a href="#design" id="markdown-toc-design"> Design </a> </li>
+        </ul>
+      </li>
+      <Li> <a href="#shu-ju-ku-" id="markdown-toc-shu-ju-ku-"> Database </a> </li>
+      <Li>
+{Html_Enter/
+          <Li> <a href="#she-ji-" id="markdown-toc-she-ji-"> Design </a> </li>
+          <Li> <a href="#ji-zhu-" id="markdown-toc-ji-zhu-"> Technology </a> </li>
+        </ul>
+      </li>
+      <Li>
+{Html_EnErephone} Read / learn </a> <ul>
+          <Li> <a href="#awesome-xi-lie-" id="markdown-toc-awesome-xi-lie-"> Awesome series </a> </li>
+          <Li>
+<a href="#qian-duan-" id="markdown-toc-qian-duan-"> front end </a> <ul>
+              <Li> <a href="#web" id="markdown-toc-web"> Web </a> </li>
+              <Li> <a href="#ios-1" id="markdown-toc-ios-1"> IOS </a> </li>
+              <Li> <a href="#android-2" id="markdown-toc-android-2"> Android </a> </li>
+            </ul>
+          </li>
+          <Li>
+<a href="#hou-duan-" id="markdown-toc-hou-duan-"> backend </a> <ul>
+              <Li> <a href="#nodejs-1" id="markdown-toc-nodejs-1"> Node.js </a> </li>
+              <Li> <a href="#ruby-2" id="markdown-toc-ruby-2"> Ruby </a> </li>
+              <Li> <a href="#php" id="markdown-toc-php"> PHP </a> </li>
+              <Li> <a href="#go-1" id="markdown-toc-go-1"> Go </a> </li>
+              <Li> <a href="#jie-kou-" id="markdown-toc-jie-kou-"> Interface </a> </li>
+            </ul>
+          </li>
+          <Li> <a href="#suan-fa---lun-wen-" id="markdown-toc-suan-fa---lun-wen-"> Algorithm & amp; Papers </a> </li>
+          <Li> <a href="#qi-ta-" id="markdown-toc-qi-ta-"> Other </a> </li>
+        </ul>
+      </li>
+      <Li> <a href="#ke-xue-shang-wang-" id="markdown-toc-ke-xue-shang-wang-"> Science Online </a> </li>
+      <Li> <a href="#git-xiang-guan-" id="markdown-toc-git-xiang-guan-"> Git related </a> </li>
+      <Li> <a href="#qi-ta--1" id="markdown-toc-qi-ta--1"> Other </a> </li>
+      <Li> <a href="#license" id="markdown-toc-license"> License </a> </li>
+    </ul>
+  </li>
 </ul>
 
-<h2 id="web-qian-duan-">Web 前端</h2>
+<H2 id = "web-qian-duan -"> Web front end </ h2>
+
 
 <h4 id="javascript">Javascript</h4>
 
 <ul>
   <li>
-<a href="https://github.com/adambom/parallel.js">parallel.js</a>: 前后端通用的一个并行库</li>
-  <li>
-<a href="https://github.com/madrobby/zepto">zepto</a>: 用于现代浏览器的兼容 jQuery 的库</li>
-  <li>
-<a href="https://github.com/totorojs/totoro">totoro</a>: 稳定的跨浏览器测试工具</li>
-  <li>
-<a href="https://github.com/Zhouzi/TheaterJS">TheaterJS</a>: 一个用于模拟人输入状态的 JS 库</li>
-  <li>
-<a href="https://github.com/markdalgleish/stellar.js">stellar.js</a>: 前端用于实现异步滚动效果的库，现已不再维护</li>
-  <li>
-<a href="https://github.com/Prinzhorn/skrollr">skrollr</a>: 另一款实现一步滚动的开源库，使用人数众多，可实现各种狂拽酷炫掉渣天的前端效果，<a href="http://prinzhorn.github.io/skrollr/">看真相</a>
+<a href="https://github.com/adambom/parallel.js"> parallel.js </a>: A parallel library for front and back ends </li>
+  <Li>
+<a href="https://github.com/madrobby/zepto"> zepto </a>: compatible jQuery libraries for modern browsers </li>
+  <Li>
+<a href="https://github.com/totorojs/totoro"> totoro </a>: Stable cross-browser testing tools </li>
+  <Li>
+<a href="https://github.com/Zhouzi/TheaterJS"> TheaterJS </a>: A JS library for simulating people's input status </li>
+  <Li>
+<a href="https://github.com/markdalgleish/stellar.js"> stellar.js </a>: Front-end libraries for asynchronous scrolling are no longer maintained </li>
+  <Li>
+<a href="https://github.com/Prinzhorn/skrollr"> skrollr </a>: Another way to achieve a one-step rolling open source library, the use of a large number of people can achieve a variety of crazy dodge dregs Front end effect, <a href="http://prinzhorn.github.io/skrollr/"> see the truth </a>
 </li>
+  <Li>
+<a href="https://github.com/nolimits4web/Framework7"> Framework7 </a>: Front-end framework for developers who can build IOS7 programs based on web technology </li>
+  <Li>
+<a href="https://github.com/JexCheng/regulex"> regulex </a>: Visual Flow for Generating Regular Expressions </li>
+  <Li>
+<a href="https://github.com/markdown-it/markdown-it"> markdown-it </a>: new Markdown parser, fast, plug-in support </li>
+  <Li>
+<a href="https://github.com/sindresorhus/multiline"> multiline </a>: Multi-line text for Javascript, similar to Ruby's HERE Doc </li>
+  <Li>
+<a href="https://github.com/sindresorhus/screenfull.js"> screenfull.js </a>: full screen plugin, support major browsers </li>
+  <Li>
+<a href="https://github.com/olivernn/lunr.js"> lunr.js </a>: Similar to Solr, but for full-text search engines on the browser, you can create indexes for JSON, offline You can also use </li>
+  <Li>
+<a href="https://github.com/jeresig/jquery.hotkeys"> jquery.hotkeys </a>: jQuery plugin for binding hotkeys </li>
+  <Li>
+<a href="https://github.com/breach/breach_core"> breach_core </a>: Javascript written by Browser (browser) </li>
+  <Li>
+<a href="https://github.com/zmmbreeze/octocard"> octocard </a>: Library for generating Github information cards </li>
+  <Li>
+<a href="https://github.com/lepture/github-cards"> github-cards </a>: Library for generating Github information cards </li>
+  <Li>
+<a href="https://github.com/openexchangerates/money.js"> money.js </a>: Lightweight currency conversion library, web and node are available </li>
+  <Li>
+<a href="https://github.com/openexchangerates/accounting.js"> accounting.js </a>: Lightweight Numbers, Currency Converter </li>
+  <Li>
+<a href="https://github.com/mgechev/javascript-algorithms"> javascript-algorithms </a>: Javascript implementation of a variety of algorithm collections </li>
+  <Li>
+<a href="https://github.com/dtao/lazy.js"> lazy.js </a>: similar to underscore, but will delay the implementation of certain scenarios, the performance will be greatly improved < / Li>
+  <Li>
+<a href="https://github.com/seajs/seajs"> seajs </a>: front-end module loader to solve problems such as modularity, dependency </li>
+  <Li>
+<a href="https://github.com/davist11/jQuery-One-Page-Nav"> jQuery-One-Page-Nav </a>: A library in a single-page application that handles the navigation bar </li>
+  <Li>
+<a href="https://github.com/js-js/js.js"> js.js </a>: Javascript javascript JIT </li>
+  <Li>
+Jquery-ui </a>: jQuery team developed UI-related front-end library, powerful </li>
+  <Li>
+<a href="https://github.com/tastejs/todomvc"> todomvc </a>: TODO List based on AngularJS / EmberJS / Backbone, etc. Help developers choose front end MVC library </li>
+  <Li>
+<a href="https://github.com/mozilla/localForage"> localForage </a>: Mozilla produced for offline storage, based on IndexedDB, WebSQL, or localStorage, providing a consistent interface </li>
+  <Li>
+<a href="https://github.com/Wolfy87/EventEmitter"> EventEmitter </a>: browser version of EventEmitter </li>
+  <Li>
+<a href="https://github.com/marioizquierdo/jquery.serializeJSON"> jquery.serializeJSON </a>: jQuery plugin for serializing form forms into JSON data </ ​​li>
+  <Li>
+<a href="https://github.com/knockout/knockout"> knockout </a>: Front end MVVM framework for developing rich front end applications </li>
+  <Li>
+<a href="https://github.com/knsv/mermaid"> mermaid </a>: Generate flowcharts based on text, similar to Markdown syntax </li>
+  <Li>
+Js-sequence-diagrams </a>: another library that can generate flowcharts based on text, similar to Markdown's syntax < / Li>
+  <Li>
+<a href="https://github.com/facebook/flow"> flow </a>: a library for detecting Javascript syntax errors, Facebook production </li>
+  <Li>
+<a href="https://github.com/jaukia/zoomooz"> zoomooz </a>: jQuery plugin for handling browser zoom </li>
+  <Li>
+<a href="https://github.com/fancyapps/fancyBox"> fancyBox </a>: a library for zooming in, out, or containing multimedia elements, elegant and generous </li>
+  <Li>
+<a href="https://github.com/lhorie/mithril.js"> mithril.js </a>: Lightweight front-end MVC framework with partial performance over Angular.js and React </li>
+  <Li>
+<a href="https://github.com/jashkenas/backbone"> backbone </a>: Powerful front-end MVC library, the ancestor-level front-end library, originally compatible with Rails to modular front-end applications, good compatibility (compatible To IE6), plugin rich, good performance </li>
   <li>
-<a href="https://github.com/nolimits4web/Framework7">Framework7</a>: 前端框架，是开发人员可以基于 web 技术构建 IOS7 程序</li>
-  <li>
-<a href="https://github.com/JexCheng/regulex">regulex</a>: 用于生成 正则表达式 的可视化流程图</li>
-  <li>
-<a href="https://github.com/markdown-it/markdown-it">markdown-it</a>: 新型 Markdown 解析器，快速，支持插件</li>
-  <li>
-<a href="https://github.com/sindresorhus/multiline">multiline</a>: 用于 Javascript 中的多行文本，类似于 Ruby 的 HERE Doc</li>
-  <li>
-<a href="https://github.com/sindresorhus/screenfull.js">screenfull.js</a>: 全屏插件，支持各大浏览器</li>
-  <li>
-<a href="https://github.com/olivernn/lunr.js">lunr.js</a>: 类似于 Solr, 但是用于浏览器上的全文搜索引擎，可以为 JSON 创建索引，离线也可以使用</li>
-  <li>
-<a href="https://github.com/jeresig/jquery.hotkeys">jquery.hotkeys</a>: jQuery 插件，用于绑定热键</li>
-  <li>
-<a href="https://github.com/breach/breach_core">breach_core</a>: Javascript 编写的 Browser (浏览器)</li>
-  <li>
-<a href="https://github.com/zmmbreeze/octocard">octocard</a>: 用于生成 Github 信息卡片的库</li>
-  <li>
-<a href="https://github.com/lepture/github-cards">github-cards</a>: 用于生成 Github 信息卡片的库</li>
-  <li>
-<a href="https://github.com/openexchangerates/money.js">money.js</a>: 轻量级货币转换库，web 和 node 皆可用</li>
-  <li>
-<a href="https://github.com/openexchangerates/accounting.js">accounting.js</a>: 轻量级的数字、货币转换库</li>
-  <li>
-<a href="https://github.com/mgechev/javascript-algorithms">javascript-algorithms</a>: Javascript 实现的各种算法集合</li>
-  <li>
-<a href="https://github.com/dtao/lazy.js">lazy.js</a>: 类似于 underscore, 但是会延迟执行，某些场景下，性能会有很大的提升</li>
-  <li>
-<a href="https://github.com/seajs/seajs">seajs</a>: 前端模块加载器，解决模块化、依赖等问题</li>
-  <li>
-<a href="https://github.com/davist11/jQuery-One-Page-Nav">jQuery-One-Page-Nav</a>: 单页应用中一个用于处理导航栏的库</li>
-  <li>
-<a href="https://github.com/js-js/js.js">js.js</a>: Javascript 实现的 javascript JIT</li>
-  <li>
-<a href="https://github.com/jquery/jquery-ui">jquery-ui</a>: jQuery 团队开发的 UI 相关的前端库，功能强大</li>
-  <li>
-<a href="https://github.com/tastejs/todomvc">todomvc</a>: 分别基于 AngularJS/EmberJS/Backbone等实现的 TODO List, 帮助开发者选择前端 MVC 库</li>
-  <li>
-<a href="https://github.com/mozilla/localForage">localForage</a>: Mozilla 出品，用于离线存储，基于IndexedDB, WebSQL 或者 localStorage, 提供一致的接口</li>
-  <li>
-<a href="https://github.com/Wolfy87/EventEmitter">EventEmitter</a>: 浏览器版的 EventEmitter</li>
-  <li>
-<a href="https://github.com/marioizquierdo/jquery.serializeJSON">jquery.serializeJSON</a>: jQuery 插件，用于将 form 表单序列化成 JSON 数据</li>
-  <li>
-<a href="https://github.com/knockout/knockout">knockout</a>: 前端 MVVM 框架，用于开发富前端应用</li>
-  <li>
-<a href="https://github.com/knsv/mermaid">mermaid</a>: 可以根据文本生成流程图，类似于 Markdown 的语法</li>
-  <li>
-<a href="https://github.com/bramp/js-sequence-diagrams">js-sequence-diagrams</a>: 另一款可以根据文本生成流程图的库，类似于 Markdown 的语法</li>
-  <li>
-<a href="https://github.com/facebook/flow">flow</a>: 一个用来检测 Javascript 语法错误的库， Facebook 出品</li>
-  <li>
-<a href="https://github.com/jaukia/zoomooz">zoomooz</a>: jQuery 插件，用来处理浏览器缩放</li>
-  <li>
-<a href="https://github.com/fancyapps/fancyBox">fancyBox</a>: 一个用于放大缩小图片、Web 内容或者多媒体元素的库，优雅大方</li>
-  <li>
-<a href="https://github.com/lhorie/mithril.js">mithril.js</a>: 轻量型前端 MVC 框架，部分使用场景下性能优于 Angular.js 和 React</li>
-  <li>
-<a href="https://github.com/jashkenas/backbone">backbone</a>: 强大的前端 MVC 库，鼻祖级前端库，最初为了配合 Rails 来模块化前端应用，兼容性良好 (兼容到 IE6)，插件丰富，性能良好</li>
-  <li>
-<a href="https://github.com/jasny/jquery.smartbanner">jquery.smartbanner</a>: <a href="http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html">smartbanner</a> 是从 IOS6 开始支持的一个新特性, 这个插件提供了对早期 IOS4/5 和 Android 的支持</li>
-  <li>
-<a href="https://github.com/flesler/jquery.scrollTo">jquery.scrollTo</a>: 在页面上以一个元素为起始以动画的方式移动(ScrollTo)到另一个元素， 支持回退等</li>
-  <li>
-<a href="https://github.com/vitch/jScrollPane">jScrollPane</a>: 自定义的滚动条，让所有浏览器都显示一样的滚动条</li>
-  <li>
-<a href="https://github.com/peachananr/onepage-scroll">onepage-scroll</a>: 提供类似于 iPhone6 展示页类似的效果，适用于单页应用，兼容到 IE8</li>
-  <li>
-<a href="https://github.com/sakabako/scrollMonitor">scrollMonitor</a>: 前端插件用来监控元素的滚动事件(进入、退出等)，性能很好</li>
-  <li>
-<a href="https://github.com/janpaepke/ScrollMagic">ScrollMagic</a>: 神奇的滚动交互效果插件，可以在滚动的过程中设置各种各样的动态效果</li>
-  <li>
-<a href="https://github.com/paulirish/infinite-scroll">infinite-scroll</a>: 滚动加载，滚动到最下到自动加载， Paul Irish 大神之作</li>
-  <li>
-<a href="https://github.com/LeaVerou/animatable">animatable</a>: 仅仅依靠 <code>border-width</code> 和 <code>background-position</code> 实现的各种动态效果，<a href="http://leaverou.github.io/animatable/">看真相</a>
+<a href="https://github.com/jasny/jquery.smartbanner">jquery.smartbanner</a>: <a href="http://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html">smartbanner</a> Is a new feature that is supported by IOS6, which provides support for early IOS4 / 5 and Android </li>
+  <Li>
+<a href="https://github.com/flesler/jquery.scrollTo"> jquery.scrollTo </a>: Moves (ScrollTo) to another element on the page as an element starting with an element, Support fallback, etc. </li>
+  <Li>
+<a href="https://github.com/vitch/jScrollPane"> jScrollPane </a>: Customize the scroll bar so that all browsers display the same scroll bar </li>
+  <Li>
+<a href="https://github.com/peachananr/onepage-scroll"> onepage-scroll </a>: Provides similar effects like the iPhone6 ​​display page for single-page apps, compatible with IE8 </li>
+  <Li>
+<a href="https://github.com/sakabako/scrollMonitor"> scrollMonitor </a>: The front-end plugin is used to monitor the scrolling events of the element (entry, exit, etc.) and performance is good </li>
+  <Li>
+<a href="https://github.com/janpaepke/ScrollMagic"> ScrollMagic </a>: The magic of rolling interactive effects plug-in, you can set a variety of dynamic effects in the rolling process </li>
+  <Li>
+<a href="https://github.com/paulirish/infinite-scroll"> infinite-scroll </a>: scroll loading, scroll to the bottom of the auto load, Paul Irish gods </li>
+  <Li>
+<a href="https://github.com/LeaVerou/animatable"> animatable </a>: just by <code> border-width </ code> and <code> background-position </ code> Dynamic effect, <a href="http://leaverou.github.io/animatable/"> look at the truth </a>
 </li>
-  <li>
-<a href="https://github.com/terrymun/Fluidbox">Fluidbox</a>: 页面上内嵌图片的放大缩小效果，类似于 <a href="http://medium.com">Medium</a> 中的效果</li>
-  <li>
-<a href="https://github.com/jzaefferer/jquery-validation">jquery-validation</a>: jQuery 的一个插件，用于校验 Form 表单</li>
-  <li>
-<a href="https://github.com/dfcb/BigVideo.js">BigVideo.js</a>: jQuery 的一个插件, 用于实现大背景(视频、图片)效果</li>
-  <li>
-<a href="https://github.com/kripken/emscripten">emscripten</a>: 一款基于 LLVM, 可以将 C/C++ 转换成 Javascript 的工具，使得 Javascript 可以近乎 Native 的速度</li>
-  <li>
-<a href="https://github.com/kazuhikoarase/qrcode-generator">qrcode-generator</a>: 各种语言的二维码生成工具</li>
-  <li>
-<a href="https://github.com/matthewhudson/device.js">device.js</a>: 一个可以检测设备类型的工具，可以让我们根据不同的设备来为其定制响应的 Javascript 和 CSS</li>
-  <li>
-<a href="https://github.com/jeromeetienne/jquery-qrcode">jquery-qrcode</a>: jQuery 插件，用来生成二维码</li>
-  <li>
-<a href="https://github.com/GBKS/Wookmark-jQuery">Wookmark-jQuery</a>: jQuery 的一个插件，可以用来实现瀑布流的效果</li>
-  <li>
-<a href="https://github.com/metafizzy/isotope">isotope</a>: 可以用来过滤、排列布局，实现美观的动态布局切换效果，<a href="http://isotope.metafizzy.co/">Demo</a>
+  <Li>
+<a href="https://github.com/terrymun/Fluidbox"> Fluidbox </a>: Zoom in and out of the embedded image on the page, similar to <a href="http://medium.com"> Medium </a> in effect </li>
+  <Li>
+<a href="https://github.com/jzaefferer/jquery-validation"> jquery-validation </a>: A plugin for jQuery for checking the Form form </li>
+  <Li>
+<a href="https://github.com/dfcb/BigVideo.js"> BigVideo.js </a>: A plugin for jQuery for implementing big background (video, image) effects </li>
+  <Li>
+<a href="https://github.com/kripken/emscripten"> emscripten </a>: A tool based on LLVM that can convert C / C ++ to Javascript so that Javascript can be close to Native speed </li>
+  <Li>
+<a href="https://github.com/kazuhikoarase/qrcode-generator"> qrcode-generator </a>: 2D Code Generation Tools in Various Languages ​​</li>
+  <Li>
+<a href="https://github.com/matthewhudson/device.js"> device.js </a>: A tool that can detect device types that allows us to customize the response to Javascript depending on the device And CSS </li>
+  <Li>
+<a href="https://github.com/jeromeetienne/jquery-qrcode"> jquery-qrcode </a>: jQuery plugin used to generate two-dimensional code </li>
+  <Li>
+<a href="https://github.com/GBKS/Wookmark-jQuery"> Wookmark-jQuery </a>: A plugin for jQuery that can be used to implement the effect of a waterfall stream </li>
+  <Li>
+<a href="https://github.com/metafizzy/isotope"> isotope </a>: can be used to filter, arrange the layout, to achieve a beautiful dynamic layout switching effect, <a href = "http: // isotope .metafizzy.co / "> Demo </a>
 </li>
-  <li>
-<a href="https://github.com/aFarkas/lazysizes">lazysizes</a>: 功能强大的图片延迟加载工具，可以首先加载一个低质量的图片，然后再加载高质量的图片</li>
-  <li>
-<a href="https://github.com/kimmobrunfeldt/progressbar.js">progressbar.js</a>: 简洁美观的进度条，扁平化</li>
-  <li>
-<a href="https://github.com/pigshell/pigshell">pigshell</a>: 一个由 Javascript 实现的Shell, 将互联网当做一个大的文件系统, 通过 cd/ls/cat…..等命令, 可以访问 Facebook<br>
-/Twitter/Google Drive 等网络服务</li>
-  <li>
-<a href="https://github.com/bgrins/spectrum">spectrum</a>: Js实现的颜色选择器 (Colorpicker)</li>
-  <li>
-<a href="https://github.com/hilios/jQuery.countdown">jQuery.countdown</a>: jQuery 倒计时插件</li>
-  <li>
-<a href="https://github.com/summernote/summernote">summernote</a>: WYSIWYG 富文本编辑器</li>
-  <li>
-<a href="https://github.com/LeaVerou/awesomplete">awesomplete</a>: 非常轻型的一个自动补全 JS 库, 没有任何依赖, 配置简单, 美观</li>
-  <li>
-<a href="https://github.com/abpetkov/switchery">switchery</a>: IOS 7 上 Switch 的 JS 实现, 支持 IE8 及以上浏览器</li>
-  <li>
-<a href="https://github.com/basecamp/trix">trix</a>: Basecamp 公司出品的富文本编辑器，简洁小巧</li>
-  <li>
-<a href="http://greensock.com/">greensock</a>: greensock是一個非常強大的動畫庫，網站內也有很完整的API文檔和examples</li>
+  <Li>
+<a href="https://github.com/aFarkas/lazysizes"> lazysizes </a>: Powerful image delay loading tool that can first load a low quality image and then load high quality images </li>
+  <Li>
+<a href="https://github.com/kimmobrunfeldt/progressbar.js"> progressbar.js </a>: simple and beautiful progress bar, flattened </li>
+  <Li>
+<a href="https://github.com/pigshell/pigshell"> glovehell </a>: a Javascript implementation of the shell, the Internet as a large file system, through cd / ls / cat ... .. and so on Command, can access Facebook
+/ Twitter / Google Drive and other network services </li>
+  <Li>
+<a href="https://github.com/bgrins/spectrum"> spectrum </a>: Js implementation color selector (Colorpicker) </li>
+  <Li>
+<a href="https://github.com/hilios/jQuery.countdown"> jQuery.countdown </a>: jQuery Countdown Plugin </li>
+  <Li>
+<a href="https://github.com/summernote/summernote"> summernote </a>: WYSIWYG Rich Text Editor </li>
+  <Li>
+<a href="https://github.com/LeaVerou/awesomplete"> awesomplete </a>: very light an auto-fill JS library, without any dependencies, simple configuration, beautiful </li>
+  <Li>
+<a href="https://github.com/abpetkov/switchery"> switchery </a>: JS implementation on Switch on IOS 7, support IE8 and above </li>
+  <Li>
+<a href="https://github.com/basecamp/trix"> trix </a>: Basecamp's rich text editor, simple and compact </li>
+  <Li>
+<a href="http://greensock.com/"> greensock </a>: greensock is a very powerful animation library with full API documentation and examples within the site </li>
 </ul>
 
 <h6 id="polyfills">Polyfills</h6>
 
 <ul>
   <li>
-<a href="https://github.com/scottjehl/picturefill">picturefill</a>: 响应式的图片 <code>&lt;picture&gt;</code> polyfill, 支持srcset, sizes等</li>
-  <li>
-<a href="https://github.com/jamesallardice/Placeholders.js">Placeholders.js</a>: 为不支持的 HTML5 的浏览器提供 Placeholder 支持</li>
-  <li>
-<a href="https://github.com/LeaVerou/prefixfree">prefixfree</a>: 自动为 CSS 添加 Vender Prefix，把你从不停添加浏览器前缀的噩梦中解放出来</li>
-  <li>
-<a href="https://github.com/browserstate/history.js">history.js</a>: History 接口的功能实现</li>
-  <li>
-<a href="https://github.com/aFarkas/html5shiv">html5shiv</a>: 为 IE 等老旧浏览器添加 HTML5 标签支持</li>
-  <li>
-<a href="https://github.com/paulmillr/es6-shim">es6-shim</a>: 为浏览器添加 ES6 支持</li>
-  <li>
-<a href="https://github.com/es-shims/es5-shim">es5-shim</a>: 为浏览器添加 ES5 支持</li>
-  <li>
-<a href="https://github.com/scottjehl/Respond">Respond</a>: 为IE浏览器添加 media query 支持</li>
-  <li>
-<a href="https://github.com/bestiejs/json3">json3</a>: 为旧浏览器添加 JSON 支持</li>
+<a href="https://github.com/scottjehl/picturefill"> picturefill </a>: responsive picture <code> & lt; picture & gt; </ code> polyfill, support srcset, sizes, etc. </li>
+  <Li>
+<a href="https://github.com/jamesallardice/Placeholders.js"> Placeholders.js </a>: Provide Placeholder support for browsers that do not support HTML5 </li>
+  <Li>
+<a href="https://github.com/LeaVerou/prefixfree"> prefixfree </a>: Automatically add Vender Prefix to CSS to free you from the nightmare of adding a browser prefix </li>
+  <Li>
+<a href="https://github.com/browserstate/history.js"> history.js </a>: Features of the History interface </li>
+  <Li>
+<a href="https://github.com/aFarkas/html5shiv"> html5shiv </a>: Add HTML5 tag support for old browsers such as IE </li>
+  <Li>
+<a href="https://github.com/paulmillr/es6-shim"> es6-shim </a>: Add ES6 support for your browser </li>
+  <Li>
+<a href="https://github.com/es-shims/es5-shim"> es5-shim </a>: Add ES5 support for your browser </li>
+  <Li>
+<a href="https://github.com/scottjehl/Respond"> Respond </a>: Add media query support for IE </li>
+  <Li>
+<a href="https://github.com/bestiejs/json3"> json3 </a>: Adding JSON support for older browsers </li>
 </ul>
 
-<h6 id="html5-xiang-guan-">HTML5 相关</h6>
+<H6 id = "html5-xiang-guan -"> HTML5 related </ h6>
 
-<ul>
-  <li>
-<a href="https://github.com/branding-fe/sensor">sensor.js</a>: 在智能移动设备浏览器上，通过HTML5的api使用移动设备的功能。定位、运动、倾斜等</li>
-  <li>
-<a href="https://github.com/maciejczyzewski/hyhyhy">hyhyhy</a>: 用于创建 基于 HTML5 的 演示文稿</li>
-  <li>
-<a href="https://github.com/brutaldesign/swipebox">swipebox</a>: jQuery 插件，用于处理移动端的触摸事件</li>
-  <li>
-<a href="https://github.com/mailru/FileAPI">FileAPI</a>: 前端用户处理文件（拖放、多文件上传等）</li>
-  <li>
-<a href="https://github.com/RubaXa/Sortable">Sortable</a>: 现代浏览器上用于实现元素拖拽排序的功能，支持 Meteor, AngularJS, React，不依赖 jQuery</li>
-  <li>
-<a href="https://github.com/nolimits4web/Swiper">Swiper</a>: 用于实现浏览器上的滑动切换效果，支持硬件加速</li>
-  <li>
-<a href="https://github.com/liabru/matter-js">matter-js</a>: 2D 物理效果引擎，碰撞、弹跳等</li>
-  <li>
-<a href="https://github.com/senchalabs/jQTouch">jQTouch</a>: 用于辅助创建手机端的 Web 应用，支持主题、Zepto.js 等</li>
-  <li>
-<a href="https://github.com/daniel-lundin/snabbt.js">snabbt.js</a>: 一个利用 Javascript 和 CSS transform 的 animation 库</li>
-  <li>
-<a href="https://github.com/masayuki0812/c3">c3</a>: 基于 D3 的图表库</li>
-  <li>
-<a href="https://github.com/ecomfe/echarts">echarts</a>: 企业级图表库，百度开发</li>
-  <li>
-<a href="https://github.com/wagerfield/parallax">parallax.js</a>: 一个用于响应智能手机 orientation 的库</li>
-  <li>
-<a href="https://github.com/benbarnett/jQuery-Animate-Enhanced">jQuery-Animate-Enhanced</a>: jQuery 动画库的一个增强，用于现代浏览器</li>
-  <li>
-<a href="https://github.com/Voog/wysihtml">wysihtml</a>: 富文本编辑器，适用于现代浏览器</li>
-  <li>
-<a href="https://github.com/pornel/slip">slip</a>: 一个通过滑动或者拖拽来操控列表的库</li>
-  <li>
-<a href="https://github.com/outpunk/evil-icons">evil-icons</a>: 一个矢量图库，提供 Ruby/Node 等支持</li>
-  <li>
-<a href="https://github.com/dimsemenov/PhotoSwipe">PhotoSwipe</a>: JS 的一个图片展示库</li>
-  <li>
-<a href="https://github.com/zzarcon/focusable">focusable</a>: 是页面上一个元素高亮的库，<a href="http://zzarcon.github.io/focusable/">有图有真相</a>
+<Ul>
+  <Li>
+<a href="https://github.com/branding-fe/sensor"> sensor.js </a>: Using the mobile device's functionality via the HTML5 api on the Smartphone browser. Positioning, movement, tilt, etc. </li>
+  <Li>
+<a href="https://github.com/maciejczyzewski/hyhyhy"> hyhyhy </a>: Create HTML5-based presentations </li>
+  <Li>
+<a href="https://github.com/brutaldesign/swipebox"> swipebox </a>: jQuery plugin for handling touch events on the mobile side </li>
+  <Li>
+<a href="https://github.com/mailru/FileAPI"> FileAPI </a>: Front-end user handling files (drag-and-drop, multi-file upload, etc.) </li>
+  <Li>
+<a href="https://github.com/RubaXa/Sortable"> Sortable </a>: Meta, AngularJS, React, which does not depend on jQuery on the modern browser. Li>
+  <Li>
+<a href="https://github.com/nolimits4web/Swiper"> Swiper </a>: used to achieve the browser on the sliding switch effect, support hardware acceleration </li>
+  <Li>
+<a href="https://github.com/liabru/matter-js"> matter-js </a>: 2D physics effects engine, collision, bounce, etc. </li>
+  <Li>
+<a href="https://github.com/senchalabs/jQTouch"> jQTouch </a>: Web applications for assisting in creating mobile phones, supporting themes, Zepto.js, etc. </li>
+  <Li>
+<a href="https://github.com/daniel-lundin/snabbt.js"> snabbt.js </a>: An animation library with Javascript and CSS transform </li>
+  <Li>
+<a href="https://github.com/masayuki0812/c3"> c3 </a>: D3-based chart library </li>
+  <Li>
+<a href="https://github.com/ecomfe/echarts"> echarts </a>: Enterprise Charts, Baidu Development </li>
+  <Li>
+<a href="https://github.com/wagerfield/parallax"> parallax.js </a>: A library for responding to smartphone orientation </li>
+  <Li>
+<a href="https://github.com/benbarnett/jQuery-Animate-Enhanced"> jQuery-Animate-Enhanced </a>: An enhancement to the jQuery animation library for a modern browser </li>
+  <Li>
+<a href="https://github.com/Voog/wysihtml"> wysihtml </a>: Rich text editor for modern browsers </li>
+  <Li>
+<a href="https://github.com/pornel/slip"> slip </a>: A library that controls the list by sliding or dragging </li>
+  <Li>
+<a href="https://github.com/outpunk/evil-icons"> evil-icons </a>: a vector gallery that provides Ruby / Node support </li>
+  <Li>
+<a href="https://github.com/dimsemenov/PhotoSwipe"> PhotoSwipe </a>: A photo gallery for JS </li>
+  <Li>
+<a href="https://github.com/zzarcon/focusable"> focusable </a>: is a highlight of the page on an element, <a href = "http://zzarcon.github.io/focusable There is a truth
 </li>
-  <li>
-<a href="https://github.com/paulrouget/firefox.html">firefox.html</a>: Firefox 在浏览器端的实现 —— HTML 版的 Firefox</li>
-  <li>
-<a href="https://github.com/jquery/jquery-mobile">jquery-mobile</a>: jQuery 团队开发的用于辅助手机端 web app 开发的库，基于 HTML5</li>
-  <li>
-<a href="https://github.com/mcasimir/mobile-angular-ui">mobile-angular-ui</a>: 基于angularjs和bootstarp的web app开发框架</li>
-  <li>
-<a href="https://github.com/taye/interact.js">interact.js</a>: 一个适用于现代浏览器的，用于处理 手势、拖放、缩放等的库</li>
-  <li>
-<a href="https://github.com/facebook/rebound-js">rebound-js</a>: 实现部分物理效果，Facebook 出品</li>
-  <li>
-<a href="https://github.com/addyosmani/basket.js">basket.js</a>: 基于 LocalStorage 的资源加载器，可以用来缓存 script 和 css, 手机端使用速度快于浏览器直接缓存</li>
-  <li>
-<a href="https://github.com/cubiq/iscroll">iscroll</a>: 高性能的滚动(scroll)处理库，功能强大，支持各种事件，不依赖任何的库，且插件丰富, 大众点评的手机端列表滚动就是用这个库处理的</li>
-  <li>
-<a href="https://github.com/mozilla/metrics-graphics">metrics-graphics</a>: 基于 D3 的图表库，简洁、高效，Mozilla 出品</li>
-  <li>
-<a href="https://github.com/paypal/accessible-html5-video-player">accessible-html5-video-player</a>: Paypal 出品的 Video 播放器</li>
-  <li>
-<a href="https://github.com/jxnblk/loading">loading</a>: 几种 Loading 效果，基于 SVG</li>
-  <li>
-<a href="https://github.com/mintchaos/flippant.js">flippant.js</a>: 一款能够漂亮的网页元素翻转效果库，代码许久不更新，不过作为源码学习还是不错的</li>
-  <li>
-<a href="https://github.com/visionmedia/move.js">move.js</a>: 基于 CSS3 的前端动画框架</li>
-  <li>
-<a href="https://github.com/julianlloyd/scrollReveal.js">scrollReveal.js</a>: 使元素以非常酷帅的方式进入画布 (Viewpoint)，看 <a href="http://scrollrevealjs.org/">Demo</a>
+  <Li>
+<a href="https://github.com/paulrouget/firefox.html"> firefox.html </a>: Firefox's implementation on the browser side - HTML version of Firefox </li>
+  <Li>
+<a href="https://github.com/jquery/jquery-mobile"> jquery-mobile </a>: The library developed by the jQuery team for assisting the development of the web-side web app, based on HTML5 </li>
+  <Li>
+<a href="https://github.com/mcasimir/mobile-angular-ui"> mobile-angular-ui </a>: web app development framework based on angularjs and bootstarp </li>
+  <Li>
+<a href="https://github.com/taye/interact.js"> interact.js </a>: a library for modern browsers that handles gestures, drag and drop, zoom, etc. </li>
+  <Li>
+<a href="https://github.com/facebook/rebound-js"> rebound-js </a>: Implementing some physical effects, Facebook production </li>
+  <Li>
+<a href="https://github.com/addyosmani/basket.js"> basket.js </a>: LocalStorage-based resource loader that can be used to cache scripts and css, and the phone is faster Direct cache </li>
+  <Li>
+<a href="https://github.com/cubiq/iscroll"> iscroll </a>: High-performance scroll (scroll) processing library, powerful, support a variety of events, do not rely on any library, and plug-ins Rich, the public comment on the mobile phone side of the list is to use this library to deal with </li>
+  <Li>
+<a href="https://github.com/mozilla/metrics-graphics"> metrics-graphics </a>: D3-based chart library, simple and efficient, Mozilla produced </li>
+  <Li>
+<a href="https://github.com/paypal/accessible-html5-video-player"> accessible-html5-video-player </a>: Paypal Video Player </li>
+  <Li>
+<a href="https://github.com/jxnblk/loading"> loading </a>: Several Loading effects, based on SVG </li>
+  <Li>
+<a href="https://github.com/mintchaos/flippant.js"> flippant.js </a>: A nice page element to flip the effect library, the code is not updated for a long time, but as a source of learning is good </li>
+  <Li>
+<a href="https://github.com/visionmedia/move.js"> move.js </a>: CSS3-based front-end animation framework </li>
+  <Li>
+<a href="https://github.com/julianlloyd/scrollReveal.js"> scrollReveal.js </a>: Make the element in a very cool way into the canvas (Viewpoint), see <a href = "http: //scrollrevealjs.org/">Demo </a>
 </li>
   <li>
 <a href="https://github.com/Modernizr/Modernizr">Modernizr</a>: 一个用来检测 HTML5 和 CSS3 支持情况的库</li>
